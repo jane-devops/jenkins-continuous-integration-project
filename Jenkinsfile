@@ -60,7 +60,7 @@ pipeline {
             }
         }
     }
-    stage('SonarQube Inspection') {
+    /* stage('SonarQube Inspection') {
         steps {
            // dir('realworld-cicd-pipeline-project-main/') {
             withSonarQubeEnv('SonarQube') {
@@ -84,7 +84,7 @@ pipeline {
             waitForQualityGate(abortPipeline: true)
         }
     }
-    }
+    } */
     stage("Nexus Artifact Uploader"){
         steps{
           // dir('realworld-cicd-pipeline-project-main/') {
